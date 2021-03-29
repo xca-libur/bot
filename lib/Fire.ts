@@ -118,7 +118,6 @@ export class Fire extends AkairoClient {
       user: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASS,
       database: process.env.POSTGRES_DB,
-      ssl: true
     });
     this.db.on("error", (err) =>
       this.console.error(`[DB] An error occured, ${err}`)
