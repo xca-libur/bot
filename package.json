@@ -12,11 +12,10 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "yarn compile && yarn start",
-    "litecord": "yarn compile && yarn runlc",
-    "rundev": "NODE_ENV=development node dist/src/index.js",
-    "runlc": "NODE_ENV=litecord node dist/src/index.js",
-    "compile": "rm -rf dist/ && tsc",
+    "build": "npm run lint && npm run compile",
+    "compile": "tsc --build tsconfig.json",
+    "lint": "eslint . --ignore-path .gitignore --ext .ts",
+    "lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix",
     "start": "NODE_ENV=production node dist/src/index.js",
     "format": "prettier . --write"
   },
