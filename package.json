@@ -12,11 +12,12 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "npm run compile",
-    "compile": "tsc --build tsconfig.json",
-    "lint": "eslint . --ignore-path .gitignore --ext .ts",
-    "lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix",
-    "start": "node .",
+    "build": "yarn compile && yarn rundev",
+    "litecord": "yarn compile && yarn runlc",
+    "rundev": "NODE_ENV=development node dist/src/index.js",
+    "runlc": "NODE_ENV=litecord node dist/src/index.js",
+    "compile": "rm -rf dist/ && tsc",
+    "start": "NODE_ENV=production node dist/src/index.js",
     "format": "prettier . --write"
   },
   "_moduleAliases": {
