@@ -42,13 +42,13 @@ export type MemberLogType =
 
 let emojis = {
   // shoutout to blobhub for the ebic emotes, https://inv.wtf/blobhub
-  success: "<:yes:534174796888408074>",
-  error: "<:no:534174796938870792>",
+  success: "<:success:825735299942055966>",
+  error: "<:no:826401924425187338>",
   warning: "<:maybe:534174796578160640>",
   statuspage: {
     operational: "<:operational:685538400639385649>",
     degraded_performance: "<:degraded_performance:685538400228343808>",
-    partial_outage: "<:partial_outage:685538400555499675>",
+    partial_outage: "<:partial_outage:826406643226902548>",
     major_outage: "<:major_outage:685538400639385706>",
     under_maintenance: "<:maintenance:685538400337395743>",
   },
@@ -91,7 +91,7 @@ let emojis = {
   badlyDrawnChannels: {
     text: "<:text:801665348448813086>",
     voice: "<:voice:801665653651275846>",
-    news: "<:announcement:801666040324947969>",
+    news: "<:channelannouncements:826406353463279647>",
   },
   breadBadges: {
     DISCORD_EMPLOYEE: "<:breadStaff:797174986850697217>",
@@ -123,8 +123,8 @@ let emojis = {
 };
 
 let reactions = {
-  success: "yes:534174796888408074",
-  error: "no:534174796938870792",
+  success: "success:825735299942055966",
+  error: "no:826401924425187338",
   warning: "maybe:534174796578160640",
   antistar: "antistar:824239146930667560",
 };
@@ -133,8 +133,8 @@ let reactions = {
 if (process.env.EMOJI_SET == "1") {
   emojis = {
     ...emojis,
-    success: "<:yes:823119635246350338>",
-    error: "<:no:823119661787906050>",
+    success: "<:success:825735299942055966>",
+    error: "<:no:826401924425187338>",
     warning: "<:maybe:823119649234354181>",
     statuspage: {
       operational: "<:operational:823120412668985344>",
