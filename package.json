@@ -12,7 +12,7 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "yarn compile && yarn start",
+    "build": "yarn compile && yarn rundev",
     "litecord": "yarn compile && yarn runlc",
     "rundev": "NODE_ENV=development node dist/src/index.js",
     "runlc": "NODE_ENV=litecord node dist/src/index.js",
