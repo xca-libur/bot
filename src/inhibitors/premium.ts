@@ -92,7 +92,6 @@ export default class PremiumInhibitor extends Inhibitor {
       const role = guild.roles.cache.get("564060922688176139");
       const members = await guild.members.fetch().catch(() => {});
       if (!members) return;
-      for (const [, member] of members)
     });
   }
 }
