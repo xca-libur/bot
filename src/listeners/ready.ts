@@ -50,8 +50,8 @@ export default class Ready extends Listener {
       this.client.user?.setPresence({
         activity: {
           name: this.client.manager.ws
-            ? `with fire | ${shard.id + 1}/${this.client.options.shardCount}`
-            : "with fire",
+            ? ` XCALIBUR'S ❤️| ${shard.id + 1}/${this.client.options.shardCount}`
+            : "with XCALIBUR'S Heart ❤️",
         },
         status: "dnd",
         shardID: shard.id,
